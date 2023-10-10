@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<CINTALTA &le; 0.5<br/>entropy = 0.9<br/>samples = 788<br/>value = [539, 249]>, fillcolor="#f1bb94"] ;
+1 [label=<HIPERGLU &le; 0.5<br/>entropy = 0.322<br/>samples = 376<br/>value = [354, 22]>, fillcolor="#e78945"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<HIPERTEN &le; 0.5<br/>entropy = 0.099<br/>samples = 312<br/>value = [308, 4]>, fillcolor="#e5833c"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.034<br/>samples = 279<br/>value = [278, 1]>, fillcolor="#e5813a"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.439<br/>samples = 33<br/>value = [30, 3]>, fillcolor="#e88e4d"] ;
+2 -> 4 ;
+5 [label=<HIPERTRI &le; 0.5<br/>entropy = 0.857<br/>samples = 64<br/>value = [46, 18]>, fillcolor="#efb286"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.454<br/>samples = 42<br/>value = [38, 4]>, fillcolor="#e88e4e"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.946<br/>samples = 22<br/>value = [8, 14]>, fillcolor="#aad5f4"] ;
+5 -> 7 ;
+8 [label=<HIPERTRI &le; 0.5<br/>entropy = 0.992<br/>samples = 412<br/>value = [185, 227]>, fillcolor="#daedfa"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<HIPERGLU &le; 0.5<br/>entropy = 0.914<br/>samples = 249<br/>value = [167, 82]>, fillcolor="#f2bf9a"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.564<br/>samples = 166<br/>value = [144, 22]>, fillcolor="#e99457"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.851<br/>samples = 83<br/>value = [23, 60]>, fillcolor="#85c3ef"] ;
+9 -> 11 ;
+12 [label=<HDLBAJA &le; 0.5<br/>entropy = 0.501<br/>samples = 163<br/>value = [18, 145]>, fillcolor="#52a9e8"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.944<br/>samples = 47<br/>value = [17, 30]>, fillcolor="#a9d5f4"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.072<br/>samples = 116<br/>value = [1, 115]>, fillcolor="#3b9ee5"] ;
+12 -> 14 ;
+}
